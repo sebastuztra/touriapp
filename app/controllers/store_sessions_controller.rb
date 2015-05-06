@@ -13,6 +13,7 @@ class StoreSessionsController < ApplicationController
   end
 
   def destroy
-    session[:user_id] = nil
+    session[:host_user_id] = nil
+    redirect_to '/'
   end
 end
